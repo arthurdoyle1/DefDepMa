@@ -1,23 +1,9 @@
-/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+}
 
-/* Style for the map container */
 #map {
-    border: 2px solid #333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Style for the markers */
-.leaflet-marker-icon {
-    color: #FF5733; /* Marker color */
-}
-
-/* Style for the marker popups */
-.leaflet-popup-content {
-    color: #333;
-    font-weight: bold;
-}
-
-.leaflet-popup-close-button {
-    color: #FF5733; /* Popup close button color */
+    width: 100vw;
+    height: 100vh;
 }

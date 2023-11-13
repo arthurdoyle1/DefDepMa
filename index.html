@@ -3,57 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaflet Map with Styles</title>
+    <title>Simple Leaflet Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <link rel="stylesheet" href="styles.css"> <!-- Add this line to link the custom CSS file -->
-    <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #map {
-            width: 100vw;
-            height: 100vh;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script>
-        // Initialize the map
-        var map = L.map('map').setView([0, 0], 2);
-
-        // Add a base map layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Add markers to specific locations
-        var marker1 = L.marker([-37.699450, 176.279420]).addTo(map);
-        var marker2 = L.marker([-27.643310, 153.305140]).addTo(map);
-        var marker3 = L.marker([-33.956330, 122.150270]).addTo(map);
-        var marker4 = L.marker([-34.962390, 117.391220]).addTo(map);
-        var marker5 = L.marker([-17.961210, 122.214820]).addTo(map);
-        var marker6 = L.marker([-16.505960, 151.751520]).addTo(map);
-        var marker7 = L.marker([-22.594400, 167.484440]).addTo(map);
-        var marker8 = L.marker([-37.977000, 177.057000]).addTo(map);
-        var marker9 = L.marker([-41.037600, 173.017000]).addTo(map);
-        var marker10 = L.marker([-37.670300, 176.212000]).addTo(map);
-
-        // Add popups to markers
-        marker1.bindPopup("Marker 1: Location Description");
-        marker2.bindPopup("Marker 2: Location Description");
-        marker3.bindPopup("Marker 3: Location Description");
-        marker4.bindPopup("Marker 4: Location Description");
-        marker5.bindPopup("Marker 5: Location Description");
-        marker6.bindPopup("Marker 6: Location Description");
-        marker7.bindPopup("Marker 7: Location Description");
-        marker8.bindPopup("Marker 8: Location Description");
-        marker9.bindPopup("Marker 9: Location Description");
-        marker10.bindPopup("Marker 10: Location Description");
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
